@@ -1,0 +1,43 @@
+.services {
+  @include colors(#70BFFF, var(--col-white));
+  .section__title {
+    @include bg-img('../assets/services-bg.png', 50%, 50%, contain);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button--services {
+    @include colors(var(--col-white), var(--col-black));
+    width: 400px;
+    height: 100px;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: var(--fw-bold);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: #70BFFF;
+    }
+    &__text {
+      width: 75%;
+    }
+    &__icon {
+      width: 25%;
+      height: 100px;
+      border-left: 1px solid #9D9D9D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media (max-width: 420px) {
+    .section__title {
+      font-size: 60px;
+    }
+    .button--services {
+      width: 300px;
+      font-size: 16px;
+    }
+  }
+}

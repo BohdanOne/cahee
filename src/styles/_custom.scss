@@ -1,0 +1,31 @@
+body {
+  @include colors(var(--col-white), var(--col-black));
+  font-family: var(--ff-main);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-light);
+}
+
+main {
+  padding-top: var(--padding-top);
+  .section__title {
+    font-size: 90px;
+    font-weight: var(--fw-bold);
+  }
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.button {
+  box-shadow: var(--bs);
+  text-transform: uppercase;
+  font-weight: var(--fw-light);
+  font-size: 20px;
+  border: none;
+  height: 55px;
+  width: 200px;
+  transition:
+    color .2s ease-in-out,
+    background-color .2s ease-in-out;
+}

@@ -1,0 +1,32 @@
+.contact {
+  @include bg-img('../assets/contact-bg.png', 50%, 50%, cover);
+  &__content {
+    padding: 1.5rem 0;
+  }
+  &__form {
+    .form__input {
+      @include colors(rgba(0, 196, 196, .5), var(--col-white));
+      width: 100%;
+      margin-bottom: 1rem;
+      border: none;
+      padding: 1rem;
+      &::placeholder {
+        color: var(--col-white);
+      }
+      &:focus {
+        background-color: #00C4C4;
+        border-left: 4px solid #355B82;
+      }
+    }
+  }
+  &__address-box {
+    .address--field-name {
+      text-transform: uppercase;
+      font-weight: var(--fw-bold);
+      margin: 0;
+    }
+    .address--field-value {
+      margin: 0;
+    }
+  }
+}

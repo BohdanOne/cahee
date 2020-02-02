@@ -1,0 +1,20 @@
+.subscribe {
+  @include bg-img('../assets/subscribe-bg.png', 50%, 100%, contain);
+  .section__title--subscribe {
+    font-size: 40px;
+  }
+  &__input {
+    border: 1px solid var(--col-black);
+    padding: 1rem;
+    margin: 0 1rem 1rem 0;
+    &::placeholder {
+      opacity: 50%
+    }
+  }
+  .button--subscribe {
+    @include colors(#96B92C, var(--col-white));
+    &:hover {
+      @include colors(var(--col-white), #96B92C);
+    }
+  }
+}
